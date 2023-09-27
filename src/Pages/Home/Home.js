@@ -4,7 +4,7 @@ import ItemCard from '../../Components/ItemCard/ItemCard'
 import { Axios } from '../../Config/Axios/Axios'
 
 
-const Home = ({ updateVal }) => {
+const Home = ({ updateVal, updateValue }) => {
 
     const [products, setProducts] = useState([])
 
@@ -23,7 +23,7 @@ const Home = ({ updateVal }) => {
             {
                 products.map(product => {
                     return (
-                        <ItemCard key={product.product_id} details={product} />
+                        <ItemCard key={product.product_id} details={product} updateValue={updateValue} />
                     )
                 })
             }

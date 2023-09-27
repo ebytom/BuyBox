@@ -28,7 +28,7 @@ const Main = () => {
                     <Switch>
                         <Route path="/orders" element={<MyOrders />} />
                         <Route path="/profile" element={<Profile />} />
-                        <Route path="/*" element={<Home updateVal={updateVal} />} />
+                        <Route path="/*" element={<Home updateVal={updateVal} updateValue={updateValue} />} />
                     </Switch>
                 </div>
             </div>

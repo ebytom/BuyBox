@@ -3,7 +3,7 @@ import { Button, Modal } from 'antd';
 import Payment from '../Payment/Payment';
 import { CheckCircleFillIcon } from '@primer/octicons-react';
 
-const ItemCard = ({ details }) => {
+const ItemCard = ({ details, updateValue }) => {
 
     const [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false);
@@ -16,10 +16,12 @@ const ItemCard = ({ details }) => {
     };
     const handleCancel = () => {
         setOpen(false);
+        status &&
+            updateValue()
     };
 
     const paymentStatus = (sts) => {
-        setStatus(sts)
+        setStatus(sts);
     }
 
     return (
@@ -46,14 +48,7 @@ const ItemCard = ({ details }) => {
             <Modal
                 open={open}
                 onCancel={handleCancel}
-                footer={[
-                    // <Button key="back" onClick={handleCancel}>
-                    //     Return
-                    // </Button>,
-                    // <Button key="submit" type="primary" loading={loading} onClick={handleOk}>
-                    //     Submit
-                    // </Button>
-                ]}
+                footer={[]}
             >
                 <>
                     {
