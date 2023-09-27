@@ -202,3 +202,14 @@ a {
   /* Responsive grid with minimum column width of 200px */
   gap: 20px;
 }
+
+.grid-parent-div-orders {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  /* Responsive grid with minimum column width of 200px */
+  gap: 20px;
+}
+
+
+
+/* ---------------------Payment------------------------ */

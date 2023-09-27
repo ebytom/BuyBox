@@ -7,7 +7,9 @@ import Routes from "./Routes/Routes";
 export const UserContext = React.createContext();
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({
+    user_id: 1010
+  });
 
   return (
     <div className="d-flex">
