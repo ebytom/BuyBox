@@ -12,9 +12,9 @@ const ItemCard = () => {
                 </div>
             </figcaption>
             <div class="bottom-wrap-payment">
-                <div class="d-flex p-4 py-2 align-items-center justify-content-between">
+                <div class="d-flex p-3 py-2 align-items-center justify-content-between">
                     <div class="text-white"><div><b>Rs 3,999</b></div><span class="rated text-secondary">VISA Platinum</span> </div>
-                    <div class="btn btn-primary rounded-4">BuyNow</div>
+                    <div class="btn btn-primary rounded-4">Buy Now</div>
                 </div>
             </div>
         </figure>

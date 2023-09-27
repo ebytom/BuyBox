@@ -16,7 +16,7 @@ const Main = () => {
             <SideBar />
             <div className="ps-2" style={{ width: "calc(100vw)", overflow: "scroll"}}>
                 <TopBar />
-                <div className="rounded-4 mt-2 p-3" style={{ background: "#0d6bfd14", height: "calc(100vh - 95px)" }}>
+                <div className="rounded-4 mt-2 p-3" style={{ background: "#0d6bfd14", minHeight: "calc(100vh - 95px)" }}>
                     <Switch>
                         <Route path="/orders" element={<MyOrders />} />
                         <Route path="/profile" element={<Profile />} />

@@ -24,7 +24,7 @@ const TopBar = () => {
     };
 
     return (
-        <div className="d-flex justify-content-between rounded-4 p-3 bg-dark w-100">
+        <div className="d-flex justify-content-between rounded-4 p-3 bg-black w-100">
             {
                 (loc.pathname === '/home' || loc.pathname === '/') &&
                 <>
@@ -32,7 +32,7 @@ const TopBar = () => {
                         <HomeFillIcon fill='white' size={30} />
                         <b className="text-white fs-4 ms-2">Home</b>
                     </div>
-                    <div className="d-flex align-items-center btn btn-primary" onClick={showModal}>
+                    <div className="d-flex align-items-center btn btn-primary rounded-3" onClick={showModal}>
                         <PlusIcon size={22} />
                         <b className='ms-1' style={{ fontSize: "14px" }}>Add Item</b>
                     </div>
