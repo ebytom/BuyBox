@@ -1,3 +1,4 @@
+import { HomeFillIcon, PersonFillIcon, StackIcon } from '@primer/octicons-react'
 import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
@@ -23,17 +24,20 @@ const SideBar = () => {
             <ul className="nav nav-pills flex-column mb-auto gap-2">
                 <li className="nav-item">
                     <a onClick={() => { nav('/home'); setSelected("home") }} className={selected == "home" ? "nav-link active" : "nav-link text-white"} aria-current="page" style={{ cursor: "pointer" }}>
-                        <b>Home</b>
+                        <HomeFillIcon size={22} />
+                        <b className="ms-2">Home</b>
                     </a>
                 </li>
                 <li className="nav-item">
                     <a onClick={() => { nav('/orders'); setSelected("orders") }} className={selected == "orders" ? "nav-link active" : "nav-link text-white"} aria-current="page" style={{ cursor: "pointer" }}>
-                        <b>My Orders</b>
+                        <StackIcon size={22} />
+                        <b className="ms-2">My Orders</b>
                     </a>
                 </li>
                 <li className="nav-item">
                     <a onClick={() => { nav('/profile'); setSelected("profile") }} className={selected == "profile" ? "nav-link active" : "nav-link text-white"} aria-current="page" style={{ cursor: "pointer" }}>
-                        <b>Profile</b>
+                        <PersonFillIcon size={22} />
+                        <b className="ms-2">Profile</b>
                     </a>
                 </li>
             </ul>
