@@ -83,6 +83,12 @@ const TopBar = ({ updateValue }) => {
                     </Button>,
                 ]}
             >
+                {
+                    URL &&
+                    <div className="d-flex justify-content-center">
+                        <img style={{ height: "150px" }} src={URL} />
+                    </div>
+                }
                 <div className="d-flex justify-content-between my-2">
                     <b>Product Name</b>
                     <input className='w-50 p-1 rounded' onChange={e => setName(e.target.value)} />
@@ -107,6 +113,7 @@ const TopBar = ({ updateValue }) => {
                     <b>Description</b>
                     <textarea className='w-50 p-1 rounded' style={{ border: "1px solid black" }} onChange={e => setDesc(e.target.value)} />
                 </div>
+
                 <div className="d-flex justify-content-between my-2">
                     <b>URL</b>
                     <input type="link" className='w-50 p-1 rounded' onChange={e => setURL(e.target.value)} />

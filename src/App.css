@@ -213,3 +213,111 @@ a {
 
 
 /* ---------------------Payment------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ad{
+  border: 1px solid rgba(128, 128, 128, 0.327);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+  color: #3167eb;
+  font-weight: 600;
+}
+
+.add{
+  margin-right: 10px;
+}
+.bo{
+  border: 1px solid rgba(128, 128, 128, 0.327);
+  padding: 20px;
+  border-radius: 4px;
+  
+}
+.home{
+  background-color: rgba(128, 128, 128, 0.327);
+  width: min-content;
+  color: #878787;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+}
